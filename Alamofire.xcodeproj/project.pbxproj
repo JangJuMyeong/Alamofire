@@ -16,6 +16,8 @@
 		B7704C8A2664AC4300A8093B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7704C882664AC4300A8093B /* LaunchScreen.storyboard */; };
 		B792D2B32664C342001D2BB0 /* UserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B792D2B22664C342001D2BB0 /* UserListVC.swift */; };
 		B792D2B52664C37D001D2BB0 /* PhotoCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B792D2B42664C37D001D2BB0 /* PhotoCollectionVC.swift */; };
+		B792D2B92664E145001D2BB0 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B792D2B82664E144001D2BB0 /* constants.swift */; };
+		B792D2BB2664F121001D2BB0 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B792D2BA2664F121001D2BB0 /* BaseVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B7704C8B2664AC4300A8093B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B792D2B22664C342001D2BB0 /* UserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVC.swift; sourceTree = "<group>"; };
 		B792D2B42664C37D001D2BB0 /* PhotoCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionVC.swift; sourceTree = "<group>"; };
+		B792D2B82664E144001D2BB0 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		B792D2BA2664F121001D2BB0 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		C3C3FD35047021624935C0BF /* Pods_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E847F1D6E01BA0E20FB64841 /* Pods-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-Alamofire/Pods-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,17 +88,35 @@
 		B7704C7C2664AC4200A8093B /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				B792D2B72664E12E001D2BB0 /* Utils */,
 				B7704C7D2664AC4200A8093B /* AppDelegate.swift */,
 				B7704C7F2664AC4200A8093B /* SceneDelegate.swift */,
+				B792D2B62664CEBE001D2BB0 /* ViewContorller */,
 				B7704C832664AC4200A8093B /* Main.storyboard */,
-				B7704C812664AC4200A8093B /* HomeVC.swift */,
-				B792D2B22664C342001D2BB0 /* UserListVC.swift */,
-				B792D2B42664C37D001D2BB0 /* PhotoCollectionVC.swift */,
-				B7704C862664AC4300A8093B /* Assets.xcassets */,
 				B7704C882664AC4300A8093B /* LaunchScreen.storyboard */,
+				B7704C862664AC4300A8093B /* Assets.xcassets */,
 				B7704C8B2664AC4300A8093B /* Info.plist */,
 			);
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		B792D2B62664CEBE001D2BB0 /* ViewContorller */ = {
+			isa = PBXGroup;
+			children = (
+				B7704C812664AC4200A8093B /* HomeVC.swift */,
+				B792D2BA2664F121001D2BB0 /* BaseVC.swift */,
+				B792D2B22664C342001D2BB0 /* UserListVC.swift */,
+				B792D2B42664C37D001D2BB0 /* PhotoCollectionVC.swift */,
+			);
+			path = ViewContorller;
+			sourceTree = "<group>";
+		};
+		B792D2B72664E12E001D2BB0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B792D2B82664E144001D2BB0 /* constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +238,8 @@
 				B7704C802664AC4200A8093B /* SceneDelegate.swift in Sources */,
 				B792D2B32664C342001D2BB0 /* UserListVC.swift in Sources */,
 				B792D2B52664C37D001D2BB0 /* PhotoCollectionVC.swift in Sources */,
+				B792D2BB2664F121001D2BB0 /* BaseVC.swift in Sources */,
+				B792D2B92664E145001D2BB0 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
